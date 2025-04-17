@@ -20,3 +20,5 @@ Solution to state space equation
 ##* - The circuit is shown in the boost_converter_diagram.svg.
 ##* ========================================================================
 ```
+## How to Use?
+Download and Install GNU Octave. ([Here]([URL](https://octave.org/download) ""))
