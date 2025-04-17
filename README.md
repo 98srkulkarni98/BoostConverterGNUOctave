@@ -1,5 +1,6 @@
 # BoostConverterGNUOctave
 Solution to state space equation. This model simply solves the ODE in the On duration and off duration of the switch by updating the initial condition.
+The model assumes a constant load current and all components are ideal. This is not a circuit simulation, but a simple state space solution using lsode.
 The idea is to show the difference in average model and actual model. 
 ```
 ##* ========================================================================
