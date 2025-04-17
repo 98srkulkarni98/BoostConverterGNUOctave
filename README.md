@@ -1,5 +1,6 @@
 # BoostConverterGNUOctave
-Solution to state space equation
+Solution to state space equation. This model simply solves the ODE in the On duration and off duration of the switch by updating the initial condition.
+The idea is to show the difference in average model and actual model. 
 ```
 ##* ========================================================================
 ##* Title             : Boost Converter Simulation
@@ -21,4 +22,42 @@ Solution to state space equation
 ##* ========================================================================
 ```
 ## How to Use?
-Download and Install GNU Octave. ([Here](https://octave.org/download))
+1. Download and Install GNU Octave. ([Here](https://octave.org/download))
+2. Copy all these file in a new directory in your system.
+3. Open GNUOctave and run the boost_model.m
+
+## Set Parameters here
+```
+% Input Voltage
+uz = 10;
+
+## Boost Circuit Parameter
+## According to Figure boost_converter_diagram.svg
+L = 10e-3;
+C = 10e-6;
+R = 10;
+
+## Load Requires constant current
+il = 2;
+
+## Duty ratio of the transistor/switch
+a = 0.25;
+fs = 10e+3;
+Ts = 1/fs;
+Ton = a*Ts;
+Toff = (1-a)*Ts;
+```
+
+## Set Simulation parameters here
+```
+## Simulation Parameters
+tmin = 0;
+tmax = 0.005;
+dt = 1e-6;
+```
+
+## Disclaimer
+This model is for the information and example purpose. 
+
+## References
+[1] Switched Mode Power Conversion by Prof. L. Umanand & Prof. V. Ramanarayanan,Department of Electrical Engineering,IISc Bangalore.For more details on NPTEL visit [http://nptel.ac.in](http://nptel.ac.in)
