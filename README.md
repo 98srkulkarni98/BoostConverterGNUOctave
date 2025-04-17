@@ -21,4 +21,4 @@ Solution to state space equation
 ##* ========================================================================
 ```
 ## How to Use?
-Download and Install GNU Octave. ([Here](https://octave.org/download) "")
+Download and Install GNU Octave. ([Here](https://octave.org/download))
