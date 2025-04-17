@@ -62,4 +62,4 @@ This model is for the information and example purpose.
 ## References
 [1] Switched Mode Power Conversion by Prof. L. Umanand & Prof. V. Ramanarayanan,Department of Electrical Engineering,IISc Bangalore.For more details on NPTEL visit [http://nptel.ac.in](http://nptel.ac.in)
 
-[2] [Boost Converter](https://en.wikipedia.org/wiki/Boost_converter)
+[2] [Boost Converter](https://en.wikipedia.org/wiki/Boost_converter "wiki")
