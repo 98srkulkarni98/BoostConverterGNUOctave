@@ -27,7 +27,8 @@ The idea is to show the difference in average model and actual model.
 2. Copy all these file in a new directory in your system.
 3. Open GNUOctave and run the boost_model.m
 
-## Set Parameters here
+## Set Parameters of Boost Circuit:
+In boost_model.m
 ```
 % Input Voltage
 uz = 10;
@@ -49,13 +50,15 @@ Ton = a*Ts;
 Toff = (1-a)*Ts;
 ```
 
-## Set Simulation parameters here
+## Set Simulation Parameters:
+In boost_model.m
 ```
 ## Simulation Parameters
 tmin = 0;
 tmax = 0.005;
 dt = 1e-6;
 ```
+Note tmin will be the time at which inital state values are selected. Keeping it at 0 and changing the inital state vector for different simulation is logical.
 
 ## Disclaimer
 This model is for the information and example purpose. 
